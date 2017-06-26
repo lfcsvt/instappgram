@@ -1,2 +1,16 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= asset_path 'background.jpg' %>);">
+  <div class="banner-content">
+    <h1>Welcome to InstAPPgram!</h1>
+    <p>Your journey through photo sharing beggins here.</p>
+    <% if user_signed_in? %>
+      <a class="btn btn-primary btn-lg btn-instagram" href=<%= @instagram %>> <i class="fa fa-instagram" aria-hidden="true"></i> Share Instagram</a>
+    <% else %>
+     <a class="btn btn-primary btn-lg btn-instagram" href=<%= user_instagram_omniauth_authorize_path%>> <i class="fa fa-instagram" aria-hidden="true"></i> Start Here</a>
+    <% end %>
+  </div>
+</div>
+
+
+
+
+

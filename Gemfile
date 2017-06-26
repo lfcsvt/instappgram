@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.1'
+ruby '2.3.3'
 
 gem 'devise'
 gem 'figaro'
@@ -8,6 +8,11 @@ gem 'pg'
 gem 'puma'
 gem 'rails', '5.0.4'
 gem 'redis'
+gem 'omniauth-instagram', '~> 1.0', '>= 1.0.2'
+gem 'instagram'
+gem 'omniauth'
+gem 'omniauth-digitalocean'
+gem 'therubyracer'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
